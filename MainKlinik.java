@@ -6,7 +6,8 @@ public class MainKlinik {
         AntrianPasien antrian = new AntrianPasien(10);
         RiwayatTransaksi riwayat = new RiwayatTransaksi();
 
-        while (true) {
+        int menu;
+        do {
             System.out.println("\n=== SISTEM ANTRIAN KLINIK ===");
             System.out.println("1. Tambah Pasien ke Antrian");
             System.out.println("2. Lihat Antrian");
@@ -15,8 +16,8 @@ public class MainKlinik {
             System.out.println("5. Lihat Riwayat Transaksi");
             System.out.println("0. Keluar");
             System.out.print("Pilih: ");
-            int menu = sc.nextInt();
-            sc.nextLine();
+            menu = sc.nextInt();
+            sc.nextLine(); // membersihkan buffer
 
             switch (menu) {
                 case 1:
@@ -54,10 +55,10 @@ public class MainKlinik {
                     break;
                 case 0:
                     System.out.println("Terima kasih!");
-                    return;
+                    break;
                 default:
                     System.out.println("Pilihan tidak tersedia.");
             }
-        }
+        } while (menu != 0);
     }
 }
