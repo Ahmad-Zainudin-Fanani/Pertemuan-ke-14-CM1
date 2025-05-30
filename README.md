@@ -1,3 +1,4 @@
+# Tugas Case Metod 2    
 kelas TI-1H  
 Anggota Kelompok 2 :    
 - Ahmad Zainudin Fanani/244107020051   
