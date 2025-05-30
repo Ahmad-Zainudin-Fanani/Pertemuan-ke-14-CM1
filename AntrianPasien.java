@@ -19,7 +19,7 @@ public class AntrianPasien {
 
     public void tambahAntrian(Pasien pasien) {
         if (isFull()) {
-            System.out.println("Antrian penuh! Tidak dapat menambahkan pasien");
+            System.out.println("Antrian penuh!");
             return;
         }
         if (isEmpty()) {
@@ -29,12 +29,12 @@ public class AntrianPasien {
         }
         antrian[rear] = pasien;
         size++;
-        System.out.println("Pasien ditambahkan ke antrian.");
+        System.out.println(">> Pasien berhasil ditambahkan ke antrian.");
     }
 
     public Pasien layaniPasien() {
         if (isEmpty()) {
-            System.out.println("Antrian kosong! Tidak dapat melayani pasien");
+            System.out.println("Antrian kosong!");
             return null;
         }
         Pasien p = antrian[front];
@@ -45,12 +45,11 @@ public class AntrianPasien {
 
     public void tampilkanAntrian() {
         if (isEmpty()) {
-            System.out.println("Antrian kosong! Tidak ada pasien dalam antrian");
+            System.out.println(">> Tidak ada pasien dalam antrian.");
         } else {
             System.out.println("=== DAFTAR ANTRIAN PASIEN ===");
             for (int i = front; i <= rear; i++) {
-                System.out.println((i - front + 1) + ". " + antrian[i].nama + " (NIK: " + antrian[i].nik + ")");
-                System.out.println("   Keluhan: " + antrian[i].keluhan);
+                antrian[i].tampilkanInformasi();
             }
         }
     }

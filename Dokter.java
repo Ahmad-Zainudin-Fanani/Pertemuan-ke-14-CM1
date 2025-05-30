@@ -1,12 +1,9 @@
 public class Dokter {
-    String idDokter, namaDokter;
+    String idDokter;
+    String nama;
 
-    public Dokter(String idDokter, String namaDokter) {
+    public Dokter(String idDokter, String nama) {
         this.idDokter = idDokter;
-        this.namaDokter = namaDokter;
-    }
-
-    public void tampil() {
-        System.out.println("Dokter: " + namaDokter + " (ID: " + idDokter + ")");
+        this.nama = nama;
     }
 }
