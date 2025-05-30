@@ -60,5 +60,6 @@ public class MainKlinik {
                     System.out.println("Pilihan tidak tersedia.");
             }
         } while (menu != 0);
+        sc.close();
     }
 }
