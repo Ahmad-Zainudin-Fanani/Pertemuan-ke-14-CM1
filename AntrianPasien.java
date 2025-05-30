@@ -29,7 +29,7 @@ public class AntrianPasien {
         }
         antrian[rear] = pasien;
         size++;
-        System.out.println(">> Pasien berhasil ditambahkan ke antrian.");
+        System.out.println(">> Pasien masuk ke dalam antrian.");
     }
 
     public Pasien layaniPasien() {
@@ -47,9 +47,11 @@ public class AntrianPasien {
         if (isEmpty()) {
             System.out.println(">> Tidak ada pasien dalam antrian.");
         } else {
-            System.out.println("=== DAFTAR ANTRIAN PASIEN ===");
+            System.out.println("-- Antrian Pasien --");
+            System.out.println("Antrian Pasien : ");
             for (int i = front; i <= rear; i++) {
                 antrian[i].tampilkanInformasi();
+                System.out.println("--------------------------");
             }
         }
     }

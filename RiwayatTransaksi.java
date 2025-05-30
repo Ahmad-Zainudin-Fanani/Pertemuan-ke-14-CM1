@@ -21,7 +21,8 @@ public class RiwayatTransaksi {
             return;
         }
         NodeTransaksi temp = head;
-        System.out.println("=== RIWAYAT TRANSAKSI ===");
+        System.out.println("-- Riwayat Transaksi --");
+        System.out.println("Daftar Transaksi :");
         while (temp != null) {
             temp.data.tampilkanTransaksi();
             temp = temp.next;

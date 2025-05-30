@@ -16,7 +16,6 @@ public class TransaksiLayanan {
     }
 
     public void tampilkanTransaksi() {
-        System.out.println("=== Transaksi Layanan ===");
         pasien.tampilkanInformasi();
         System.out.println("Dokter: " + dokter.nama + " (ID: " + dokter.idDokter + ")");
         System.out.println("Durasi: " + durasiLayanan + " jam");
