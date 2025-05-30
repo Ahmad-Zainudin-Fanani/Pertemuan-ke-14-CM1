@@ -17,7 +17,7 @@ public class MainKlinik {
             System.out.println("0. Keluar");
             System.out.print("Pilih: ");
             menu = sc.nextInt();
-            sc.nextLine();
+            sc.nextLine(); // membersihkan buffer
 
             switch (menu) {
                 case 1:
@@ -43,8 +43,7 @@ public class MainKlinik {
                         System.out.print("Masukkan Durasi Layanan (jam): ");
                         int durasi = sc.nextInt();
                         sc.nextLine();
-                        Dokter d = new Dokter(idDokter, namaDokter);
-                        riwayat.tambah(new TransaksiLayanan(p, d, durasi));
+                        riwayat.tambah(new Transaksi(p.nama, idDokter, namaDokter, durasi));
                         System.out.println(">> Pasien telah dilayani, transaksi berhasil dicatat.");
                     }
                     break;
