@@ -23,6 +23,7 @@ public class MainKlinik {
 
             switch (menu) {
                 case 1:
+                    System.out.println("=== INPUT DATA PASIEN ===");
                     System.out.print("Nama Pasien : ");
                     String nama = sc.nextLine();
                     System.out.print("NIK         : ");

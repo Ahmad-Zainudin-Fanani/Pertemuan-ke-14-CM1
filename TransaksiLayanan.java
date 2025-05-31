@@ -17,10 +17,9 @@ public class TransaksiLayanan {
 
     public void tampilkanTransaksi() {
         pasien.tampilkanInformasi();
-        System.out.println();
-        System.out.println("Dokter : " + dokter.nama + " (ID : " + dokter.idDokter + ")");
-        System.out.println("Durasi : " + durasiLayanan + " jam");
-        System.out.println("Biaya  : Rp " + biaya);
+        System.out.println("Dokter      : " + dokter.nama + " (ID : " + dokter.idDokter + ")");
+        System.out.println("Durasi      : " + durasiLayanan + " jam");
+        System.out.println("Biaya       : Rp " + biaya);
         System.out.println("--------------------------");
     }
 }
