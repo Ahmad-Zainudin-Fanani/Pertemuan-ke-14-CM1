@@ -24,7 +24,8 @@ public class AntrianPasien {
         }
         if (isEmpty()) {
             front = rear = 0;
-        } else {
+        } 
+        else {
             rear++;
         }
         antrian[rear] = pasien;
@@ -37,16 +38,17 @@ public class AntrianPasien {
             System.out.println("Antrian kosong!");
             return null;
         }
-        Pasien p = antrian[front];
+        Pasien dilayani = antrian[front];
         front++;
         size--;
-        return p;
+        return dilayani;
     }
 
     public void tampilkanAntrian() {
         if (isEmpty()) {
             System.out.println(">> Tidak ada pasien dalam antrian.");
-        } else {
+        } 
+        else {
             System.out.println("== Antrian Pasien ==\n");
             for (int i = front; i <= rear; i++) {
                 antrian[i].tampilkanInformasi();
