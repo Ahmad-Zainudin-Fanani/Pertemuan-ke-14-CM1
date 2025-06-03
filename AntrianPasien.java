@@ -24,7 +24,7 @@ public class AntrianPasien {
         }
 
         antrian[rear] = pasien;
-        rear = (rear + 1) % max;  // perputaran indeks
+        rear = (rear + 1) % max;
         size++;
 
         System.out.println(">> Pasien masuk ke dalam antrian.");
@@ -37,7 +37,7 @@ public class AntrianPasien {
         }
 
         Pasien dilayani = antrian[front];
-        front = (front + 1) % max;  // maju secara melingkar
+        front = (front + 1) % max;
         size--;
 
         return dilayani;
