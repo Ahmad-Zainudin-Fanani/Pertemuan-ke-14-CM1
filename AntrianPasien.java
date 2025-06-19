@@ -57,7 +57,6 @@ public class AntrianPasien {
         }
     }
 
-
     public int sisaAntrian() {
         return size;
     }
